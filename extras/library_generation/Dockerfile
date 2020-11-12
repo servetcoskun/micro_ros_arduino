@@ -17,7 +17,10 @@ RUN git clone https://github.com/micro-ROS/micro-ros-build.git src/micro-ros-bui
     && rm -rf gcc-arm-none-eabi-5_4-2016q2-20160622-linux.tar.bz2 gcc-arm-none-eabi-5_4-2016q2/share/doc \
     && wget https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/+download/gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 \
     && tar -xvf gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 \
-    && rm -rf gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 gcc-arm-none-eabi-5_4-2016q3/share/doc 
+    && rm -rf gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 gcc-arm-none-eabi-5_4-2016q3/share/doc \
+    && wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/7-2017q4/gcc-arm-none-eabi-7-2017-q4-major-linux.tar.bz2 \
+    && tar -xvf gcc-arm-none-eabi-7-2017-q4-major-linux.tar.bz2 \
+    && rm -rf gcc-arm-none-eabi-7-2017-q4-major-linux.tar.bz2 gcc-arm-none-eabi-7-2017-q4-major/share/doc 
 
 COPY ./entrypoint.sh /entrypoint.sh
 
